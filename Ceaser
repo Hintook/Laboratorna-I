@@ -1,0 +1,16 @@
+alfavit = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'
+shufrator = input("Napushu shos angliyskumu bykwamu:")
+klych = int(input("Napushu chislo vid 1 do 25:"))
+shufrator = shufrator.lower()
+zashifrovane = ""
+for bykwa in shufrator:
+  positiya = alfavit.find(bykwa)
+  novapositiya = positiya + klych
+  if bykwa in alfavit:
+    zashifrovane = zashifrovane + alfavit [novapositiya]
+  else:
+    zashifrovane = zashifrovane + bykwa
+print('Tvoye zashifrovane chislo ye:',zashifrovane)
+
+
+
